@@ -47,14 +47,24 @@
 	
 <!---------------------------------------------------- INTRODUCTION ----------------------------------------------------------->
 		
-		<center><font size="20"> Under construction...</font></center>
+		<center>
+			<b>
+				<font size="6">Current U.S. debt:</font>
+			</b>
+		</center>
 		<br/>
 		
 		
-		
-		
-		
-		
+		<center>
+			<div id="containerbill">
+				<img id="imagebill" class="imgbill" src="bill.png"/>
+				<font id="natdebt" color="black" size="5px">
+					<b>
+					 <a title='national debt' name="7839" rel="type = 1;" href="http://zfacts.com/p/318.html" id="zf26_1">national debt</a>
+					</b>
+				</font>
+			</div>
+		</center>
 		
 		
 		
@@ -357,6 +367,16 @@
 		}	) 
 		.init();
 	</script>	
+	
+<!---------------------------------------------------- JAVASCRIPT national debt raw number ----------------------------------------------------------->	
+	<script type="text/javascript">
+	(function() { 
+	
+	var s = document.createElement('script');
+	s.async = true; s.src = "http://zfacts.com/giz/G26/GND.php?id=1";
+	var x = document.getElementsByTagName('script')[0];
+	x.parentNode.insertBefore(s, x); })();
+	</script>
 	
 <!---------------------------------------------------- COUNTER WHEN SCROLLED ----------------------------------------------------------->
 	<script>
