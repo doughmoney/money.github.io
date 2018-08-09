@@ -236,8 +236,8 @@ video
 }
 
 #containerbill {
-	width: 270px; 
-  	height: 144px;
+	width: 282px; 
+  	height: 150px;
   	position: relative;
 }
 
@@ -245,14 +245,15 @@ video
   	position: absolute;
   	left: 0;
 	top: 0;
-	height:	144px;
-	width: 270px;
+	width: 282px;
+	height:	150px;
 
 	animation: dollarbill 25.0s;
   	animation-iteration-count: infinite;
 }
 
 #natdebt {
+	
 	opacity: 100;
  	position: absolute;
     	top: 50%;
