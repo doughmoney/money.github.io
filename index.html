@@ -57,12 +57,10 @@
 		
 		<center>
 			<div id="containerbill">
-				<img id="imagebill" class="imgbill" src="bill.png"/>
-				<a id="natdebt">
+				<img id="imagebill" class="imgbill" src="bill.png"/>				
 					<b>
-					 <iframe  src="http://www.USADebtClock.com/us-debt-clock-widget.php" height="70" width="282" scrolling="no" frameborder="0"></iframe>
+						<a class="natdebt" id="debtClock">Calculating debt...</a>
 					</b>
-				</a>
 			</div>
 		</center>
 		
@@ -370,13 +368,13 @@
 	</script>	
 	
 <!---------------------------------------------------- JAVASCRIPT national debt raw number ----------------------------------------------------------->	
+	<script src="https://cdn.rawgit.com/shennyg/us-national-debt-widget/d402d06f61b19aee6c134007f3cad3a0fe39a2a8/dist/debtClock.min.js" type="text/javascript">
+	</script>
 	<script type="text/javascript">
-	(function() { 
-	
-	var s = document.createElement('script');
-	s.async = true; s.src = "http://zfacts.com/giz/G26/GND.php?id=1";
-	var x = document.getElementsByTagName('script')[0];
-	x.parentNode.insertBefore(s, x); })();
+	(function() {
+    var options = {};
+    var debtClock = new DebtClock(options);
+	})();
 	</script>
 	
 <!---------------------------------------------------- COUNTER WHEN SCROLLED ----------------------------------------------------------->

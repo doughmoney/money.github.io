@@ -252,8 +252,8 @@ video
   	animation-iteration-count: infinite;
 }
 
-#natdebt {
-	
+.natdebt {
+	font-size:25px;
 	opacity: 100;
  	position: absolute;
     	top: 50%;
