@@ -49,22 +49,46 @@
 		
 		<center>
 			<b>
-				<font size="6">Current U.S. debt:</font>
+				<font size="6">
+				Are you rich?
+
+				<img style="margin-bottom: 30px;" src="moneybagbounce.gif"/>
+				</font>
 			</b>
 		</center>
+			<h5 style="font-color:white;">
+				Think about how much money you will make in your lifetime: 
+				$<span class="moneyearned" data-count="100000">0</span>, 
+				$<span class="moneyearned" data-count="500000">0</span> or maybe 
+				$<span class="moneyearned" data-count="1000000">0</span>.
+				
+				<br/>
+				<br/>
+				Will it ever be enough? 
+			</h5>
+		<br/>
+		<br/>
+		<center>
+			<b>
+				<font size="6">Current U.S. debt:</font>
+			</b>
+		<br/>
 		<br/>
 		
-		
-		<center>
 			<div id="containerbill">
 				<img id="imagebill" class="imgbill" src="bill.png"/>				
 					<b id="imagebill">
-						<a class="natdebt" id="debtClock">Calculating debt...</a>
+						<a title="U.S. National debt" class="natdebt" id="debtClock">Calculating debt...</a>
 					</b>
 			</div>
 		</center>
 		
-		
+		<br/>
+		<br/>
+				
+				<h5 style="font-color:white;">
+				You will never be more poor than the U.S. government.
+				</h5>
 		
 		
 		
@@ -450,6 +474,33 @@
       {
 
         duration: 31557600000,
+        easing: 'linear',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+          $this.text(this.countNum);
+        }
+
+      });
+
+	});
+	</script>
+	<script>
+	/*countyear automatically */
+	$('.moneyearned').each(function() {
+    var $this = $(this),
+      countTo = $this.attr('data-count');
+
+    $({
+      countNum: $this.text()
+    }).animate({
+        countNum: countTo
+      },
+
+      {
+
+        duration: 10000,
         easing: 'linear',
         step: function() {
           $this.text(Math.floor(this.countNum));
