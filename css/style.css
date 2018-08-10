@@ -45,7 +45,7 @@ a:hover {
 .btn {
 	border-radius:0;
 	margin-top:10px;
-	background-color: ##70bb65;
+	background-color: #70bb65;
 	text-transform:uppercase;
 	border-color:#fff;
 	font-size:14px;
@@ -116,6 +116,15 @@ ol {
   
 }
 	
+
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  }
 /*===========================
   Menu and Navigation
 ============================ */
@@ -534,19 +543,6 @@ ul.social_icons li  a i{
   -webkit-transition: all 0.9s ease 0s;
   -o-transition: all 0.9s ease 0s;
 }
-
-.team .social_icons .fa-facebook {
-  background: #0182c4;
-}
-
-.team .social_icons .fa-twitter {
-  background: #20B8FF
-}
-
-.team .social_icons .fa-google-plus {
-  background: #D34836
-}
-
 
 .team-bar .first-one-arrow {
   float: left;
