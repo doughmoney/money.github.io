@@ -115,7 +115,8 @@ ol {
 0% { transform: translate(-1px, 1px) rotate(0deg); }
   
 }
-	
+
+ 	
 
 .fit { /* set relative picture size */
     max-width: 100%;
@@ -124,6 +125,8 @@ ol {
   .center {
     display: block;
     margin: auto;
+padding: 0;
+    margin: 0;
   }
 /*===========================
   Menu and Navigation
