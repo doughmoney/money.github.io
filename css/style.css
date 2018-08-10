@@ -119,9 +119,10 @@ ol {
  	
 
 .responsive {
-    width: 100%;
-    height: auto;
-}
+  width: auto ;
+  max-width: 100% ;
+  height: auto ;
+} 
 /*===========================
   Menu and Navigation
 ============================ */
