@@ -855,14 +855,16 @@ ul.social-network {
 }
 .sub-footer  {
 	background:#272727;
-	padding:10px;
+	padding:10px; 
+    	left: 0;
+    	bottom: 0;
+    	height: 120px;
+    	width: 100%;
+    	overflow: hidden;
+	
+  	
 }
 
-ul.social-network li {
-	display:inline;
-	margin: 0 50px;	
-	font-size:25px;	
-	margin-left:-10px;
 }
 .phonenumber {
 	float: right;
