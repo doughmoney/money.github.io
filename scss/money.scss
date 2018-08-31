@@ -1,0 +1,45 @@
+$sides: 10;
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  perspective: 2000px;
+  width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+@keyframes turn {
+  from {
+    transform: rotateX(0turn);
+  }
+  to {
+    transform: rotateX(1turn);
+  }
+}
+
+ul {
+  height: 12em;
+  width: 26em;
+  position: relative;
+}
+
+@for $i from 1 through $sides {
+  .sides-#{$i} {
+    animation: turn 3s calc(#{$i} * -200ms) linear infinite;
+    background: url('http://perakiscurrency.com/wp-content/uploads/2017/06/6-5-2017-1-24-13-PM.jpg') no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform-origin: preserve-3d;
+  }
+}
